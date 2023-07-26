@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="board">
+      <form id="todo-form">
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="New Todo..."
+          id="todo-input"
+        />
+        <button type="submit">Add +</button>
+      </form>
+      <div class="lanes">
+        <div class="todo-lane tasks">
+          <h3 class="heading">Todo</h3>
+          <p class="task" draggable="true">Get groceries</p>
+          <p class="task" draggable="true">Feed the dogs</p>
+          <p class="task" draggable="true">saute the fruits</p>
+        </div>
+        <div class="in-progress tasks">
+          <h3 class="heading">Doing</h3>
+          <p class="task" draggable="true">Binge watch</p>
+        </div>
+        <div class="completed tasks">
+          <h3 class="heading">Completed</h3>
+          <p class="task" draggable="true">Complete js</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/todo.js" defer></script>
+    <script src="src/drag.js" defer></script>
+  </body>
+</html>

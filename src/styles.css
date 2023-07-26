@@ -1,0 +1,90 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border;
+  font-family: sand-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+.board {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  background-image: url(https://media.istockphoto.com/id/1427573558/photo/person-with-brush-trying-to-remove-snow-in-a-urban-snowstrom-cars-blocked-with-snow-in-a-mid.jpg?s=2048x2048&w=is&k=20&c=hbIGvoIg9zrPQZ7oJew7bXCp5qWJc6pxNuJfVGtCoLY=);
+  background-position: center;
+  background-size: cover;
+}
+
+#todo-form button {
+  padding: 12px 32px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#todo-form input {
+  padding: 12px;
+  margin-right: 12px;
+  width: 225px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.lanes {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 3rem;
+  background: #f4f4f4;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  border-radius: 4px;
+  width: 225px;
+  min-height: 100px;
+  max-height: auto;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0;
+}
+.task {
+  background: white;
+  color: black;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: move;
+  margin: 0;
+  font-weight: bold;
+}
+
+.is-dragging {
+  scale: 1.05;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: rgb(50, 50, 50);
+  color: white;
+}
